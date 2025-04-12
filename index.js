@@ -1,6 +1,6 @@
 import os from "os";
 import { greet } from "./modules/greeting.js";
-// const { greet } = require("./modules/greeting.js");
+import { div, multiply, sub, add } from "./modules/math.js";
 
 // let x = os.cpus();
 // let y = os.freemem();
@@ -14,3 +14,8 @@ import { greet } from "./modules/greeting.js";
 
 const message = greet();
 console.log(message);
+
+console.log(add(2, 5));
+console.log(sub(4, 2));
+console.log(multiply(3, 7));
+console.log(div(9, 3));
